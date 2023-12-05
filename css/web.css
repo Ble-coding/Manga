@@ -108,7 +108,7 @@ h1, h2, p, ul, li {
   left: 50%; /* Positionnez le côté gauche au centre */
   width: 100%;
   height: 100%;
-  background-image: url('https://raw.githubusercontent.com/Ble-coding/Manga/main/image_manga/copyright.jpg');
+  background-image: url('../image_manga/copyright.jpg');
   background-size: cover;
   background-position: center;
   animation: slideInFromCenter 1.5s ease-out;
