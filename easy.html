@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+    <title>Goku</title>
+    <!-- <link rel="stylesheet" href="./css/swiper.min.css">  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/web.css">
+    <link rel="stylesheet" href="./css/mobil.css"> 
+    <link rel="stylesheet" href="./css/swiper.css"> 
+    <link rel="stylesheet" href="./css/bloc_anime.css"> 
+    <link rel="stylesheet" href="./css/alaune.css"> 
+    <link rel="stylesheet" href="./css/online.css">
+    <link rel="stylesheet" href="./css/prices.css">
+    <link rel="stylesheet" href="./css/testimonial.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/chat.css"> 
+</head>
+<body>
+
+    <!-- web.css -->
+    <div class="body_wrap">
+        <div class="page_wrap">  
+            <div class="animated-content">
+                <header>
+                    <div class="logo">
+                        <a href="#">
+                            <img class="logo_image" src="./image_manga/logo-light.webp" alt="Otaku">
+                        </a>
+                    </div>
+                    <div class="over" id="sidebar">
+                        <img id="logo" src="./image_manga/logo.webp" alt="Otaku">
+                        <button id="closeSidebar"><img class="x_img" src="./image_manga/x_black.png" alt="close"></button>
+                        <ul class="sidebar-menu">
+                            <li class="sidebar-item"><a href="#">Créer un compte</a></li>
+                            <li class="sidebar-item"><a href="#">Se connecter</a></li>
+                            <!-- <li class="sidebar-item">
+                                <a href="#" class="premium-icon button-container" id="trialButton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                 10 jours d'essai gratuit</a>
+                            </li> -->
+                            <div class="button-container">
+                                <a href="#" class="custom-button"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg> 10 jours d'essai gratuit</a>
+                            </div>
+                        </ul>
+    
+                        <div class="social-icons">
+                            <a class="social-icon"><i class="fab fa-facebook no-decoration" style="color: gold;"></i></a>
+                            <a class="social-icon"><i class="fab fa-instagram no-decoration" style="color: gold;"></i></a>
+                            <a class="social-icon"><i class="fab fa-youtube no-decoration" style="color: gold;"></i></a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#" class="social-name"> Facebook</a>
+                            <a href="#" class="social-name"> Instagram</a>
+                            <a href="#" class="social-name"> YouTube</a>
+                        </div>
+                        
+                         <!-- HR avec fond noir et padding -->
+                        <hr class="custom-hr">
+    
+                            <div class="info-container">
+                                <p><strong>+1 840 841 25 69</strong></p>
+                                <p>info@email.com</p>
+                            </div>
+                         <!-- Ajoutez cela à vos boutons ou liens de changement de langue -->
+    
+    
+                       <!-- Dropdown 1 -->
+                       <div class="dropdown" id="dropdown1">
+                            <div class="select" id="languageDropdown1">
+                                <span class="selected">Français</span>
+                                <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                                <li class="activate" value="fr">Français</li>
+                                <li value="en">Anglais</li>
+                            </ul>
+                        </div>
+                        
+                                         
+                    </div>                
+                    <nav>
+                        <ul>
+                                <li class="menu-item active"><a id="homeText"  href="#">Accueil</a></li>
+                                <li class="menu-item"><a id="pageText" href="#">Pages</a></li>
+                                <li class="menu-item"><a id="portfolioText" href="#">Portfolio</a></li>
+                                <li class="menu-item"><a href="#">Blog</a></li>
+                                <li class="menu-item"><a href="#">Shop</a></li>
+                               
+                                                    
+                            <div class="icon-container">
+                                <div class="cart-icon">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h10.72a2 2 0 0 0 2-1.61L20 6H6"></path>
+                                    </svg> -->
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span class="badge">0</span>
+                                </div>
+                                <div class="search-icon" onclick="toggleSearch(false)">
+                                    <!-- Icône de recherche -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </div>                     
+                                <div class="custom-overlay search-overlay" id="searchOverlayWeb">
+                                    <div class="search-bar" id="searchBarWeb">
+                                        <input type="text" class="search-input" placeholder="Rechercher...">
+                                        <button type="button" class="search-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <img class="logo" src="./image_manga/logo-light.webp" alt="Otaku">
+                                    <button onclick="closeSearch(false)" class="close-button"><img class="x_img" src="./image_manga/x.png" alt="close"></button>
+                                </div>  
+    
+                                <div class="user-icon" id="userIcon"  onclick="toggleSidebar()">
+                                    <div class="grid">
+                                        <div class="row">
+                                          <div class="point"></div>
+                                          <div class="point"></div>
+                                          <div class="point"></div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="point"></div>
+                                          <div class="point"></div>
+                                          <div class="point"></div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="point"></div>
+                                          <div class="point"></div>
+                                          <div class="point"></div>
+                                        </div>
+                                    </div>                                                          
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+                </header>
+            </div>                    
+        </div>
+        <div class="header-container">
+            <div class="left-container">
+                <a href="#">
+                    <img class="logo_img" src="./image_manga/logo-light.webp" alt="Otaku">
+                </a>
+            </div>
+            <div class="right-container">
+                <div class="icon-container">
+                    <div class="cart-svg">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h10.72a2 2 0 0 0 2-1.61L20 6H6"></path>
+                        </svg> -->
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="badge-icon">0</span>
+                    </div>
+                    <div class="search-svg" onclick="toggleSearch(true)">
+                        <!-- Icône de recherche -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>    
+                    <div class="custom-overlay search-overlay" id="searchOverlayMobile">
+                        <div class="search-bar" id="searchBarMobile">
+                            <input type="text" class="search-input" placeholder="Rechercher...">
+                            <button type="button" class="search-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </button>
+                        </div>
+                        <img class="logo" src="./image_manga/logo-light.webp" alt="Otaku">
+                        <button onclick="closeSearch(true)" class="close-button"><img class="x_img" src="./image_manga/x.png" alt="close"></button>
+                    </div>
+                    <div class="user-svg" id="userSvg" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-2.45 0-4.66-1.25-6-3 0-2 4-3.1 6-3.1s6 1.1 6 3.1c-1.34 1.75-3.55 3-6 3zm0-16a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"></path>
+                        </svg>                                                             
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="column">
+                <div class="text-box">
+                    <h2 class="titre-communaute">Rejoignez la communauté des classiques de tous les temps</h2>
+                    <div class="bordure">
+                        <p class="portail-video">Portail vidéo</p>
+                    </div>
+                    <p class="culture-anime">Culture anime</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobil.css -->
+    <header class="header_section">     
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <div class="custom_menu-btn">
+                    <div class="icon-container">
+                        <button onclick="openNav()">
+                            <span class="s-1"></span>
+                            <span class="s-2"></span>
+                            <span class="s-3"></span>
+                        </button>
+                    </div>
+                    <div class="overlay" id="myNav">
+                        <div class="overlay-content">
+                            <!-- <span class="close-btn" onclick="closeNav()">&times;</span> -->
+                            <a href="#">
+                                <img class="logo_ig" src="./image_manga/logo-light.webp" alt="Otaku">
+                            </a>
+
+                            <ul>
+                                <li class="active"><a id="homeText1" href="#">Accueil</a></li>
+                                <li><a id="pageText1" href="#">Pages</a></li>
+                                <li><a id="portfolioText1" href="#">Portfolio</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Shop</a></li>
+                            </ul>
+                                <!-- Dropdown 2 -->
+                                <!-- <div class="dropdown" id="dropdown2">
+                                    <div class="select" id="languageDropdown2">
+                                        <span class="selected">Français</span>
+                                        <div class="caret"></div>
+                                    </div>
+                                    <ul class="menu">
+                                        <li class="activate" value="fr">Français</li>
+                                        <li value="en">Anglais</li>
+                                    </ul>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- swiper.css -->
+    <div class="swiper-container">
+        <div class="mt-1 mb-3 widget-title">
+            <div class="widget-container">
+                <div class="title-content">
+                    <span class="subtitle">Téléchargement premium</span>
+                    <h1 class="main-title">Anime premium du mois</h1>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="product-swiper">
+                <a href="#" class="product-image-container-swiper">
+                    <img class="swiper-image" src="./image_manga/product12-copyright-600x700.jpg" alt="Product Image">
+                    <i class="fas fa-heart heart-icon-swiper"></i>
+                    <!-- Le reste du contenu du product-swiper -->
+                    <div class="product-ombre-swiper">
+                        <div class="product-details-swiper">
+                            <div class="product-title-swiper">VIOLET EVERGARDEN</div>
+                            <div class="product-price-swiper">$10.00</div>
+                            <div class="star-container-swiper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info-swiper">
+                        <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                        <div class="basket-button-swiper">
+                            <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+           <div class="swiper-slide">
+                <div class="product-swiper">
+                    <a href="#" class="product-image-container-swiper">
+                        <img class="swiper-image" src="./image_manga/product13-copyright-600x700.jpg" alt="Product Image">
+                        <i class="fas fa-heart heart-icon-empty-swiper"></i>
+                            <!-- Le reste du contenu du product-swiper -->
+                        <div class="product-ombre-swiper">
+                            <div class="product-details-swiper">
+                                <div class="product-title-swiper">STRANGER FEELINGS</div>
+                                <div class="product-price-swiper">$10.00</div>
+                                <div class="star-container-swiper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info-swiper">
+                            <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                            <div class="basket-button-swiper">
+                                <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </div> <!-- Fermez la div pour product-swiper ici -->
+            </div>
+              <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="product-swiper">
+                    <a href="#" class="product-image-container-swiper">
+                        <img class="swiper-image" src="./image_manga/product14-copyright-600x700.jpg" alt="Product Image">
+                        <i class="fas fa-heart heart-icon-swiper"></i>
+                            <!-- Le reste du contenu du product-swiper -->
+                        <div class="product-ombre-swiper">
+                            <div class="product-details-swiper">
+                                <div class="product-title-swiper">DARK GATHERING</div>
+                                <div class="product-price-swiper">$12.00</div>
+                                <div class="star-container-swiper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"fill="#fff">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info-swiper">
+                            <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                            <div class="basket-button-swiper">
+                                <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </a>
+                </div> <!-- Fermez la div pour product-swiper ici -->  
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <div class="product-swiper">
+                    <a href="#" class="product-image-container-swiper">
+                        <img class="swiper-image" src="./image_manga/product15-copyright-600x700.jpg" alt="Product Image">
+                        <i class="fas fa-heart heart-icon-swiper"></i>
+                        <!-- Le reste du contenu du product-swiper -->
+                    <div class="product-ombre-swiper">
+                        <div class="product-details-swiper">
+                            <div class="product-title-swiper">FRUITS BASKET</div>
+                            <div class="product-price-swiper">$15.00</div>
+                            <div class="star-container-swiper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info-swiper">
+                        <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                        <div class="basket-button-swiper">
+                            <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    </a> 
+                </div> <!-- Fermez la div pour product-swiper ici --> 
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+                <div class="product-swiper">
+                    <a href="#" class="product-image-container-swiper">
+                        <img class="swiper-image" src="./image_manga/product16-copyright-600x700.jpg" alt="Product Image">
+                        <i class="fas fa-heart heart-icon-swiper"></i>
+                        <!-- Le reste du contenu du product-swiper -->
+                    <div class="product-ombre-swiper">
+                        <div class="product-details-swiper">
+                            <div class="product-title-swiper">TO YOUR ETERNITY</div>
+                            <div class="product-price-swiper">$11.00</div>
+                            <div class="star-container-swiper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                    <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info-swiper">
+                        <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                        <div class="basket-button-swiper">
+                            <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    </a> 
+                </div> <!-- Fermez la div pour product-swiper ici --> 
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+                <div class="product-swiper">
+                    <a href="#" class="product-image-container-swiper">
+                        <img class="swiper-image" src="./image_manga/product17-copyright-600x700.jpg" alt="Product Image">
+                        <i class="fas fa-heart heart-icon-swiper"></i>
+                        <!-- Le reste du contenu du product-swiper -->
+                        <div class="product-ombre-swiper">
+                            <div class="product-details-swiper">
+                                <div class="product-title-swiper">BUNGO STRAY DOGS</div>
+                                <div class="product-price-swiper">$10.00</div>
+                                <div class="star-container-swiper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info-swiper">
+                            <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                            <div class="basket-button-swiper">
+                                <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </a> 
+                </div> <!-- Fermez la div pour product-swiper ici --> 
+            </div>
+      
+          <!-- Ajoutez d'autres slides de la même manière -->
+      
+        </div>
+    </div>
+      
+    <!-- bloc-anime.css -->
+    <div class="spacer-widget">
+        <div class="mt-5 mb-3 widget-title">
+            <div class="widget-container">
+                <div class="title-content">
+                    <span class="subtitle">Téléchargement gratuit</span>
+                    <h1 class="main-title">Anime gratuit du mois</h1>
+                </div>
+            </div>
+        </div>  
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-12"> -->
+                    <div class="product-item col-md-3">
+                        <a href="#" class="product-image-container">
+                            <img class="product-image" src="./image_manga/product18-copyright-600x700.jpg" alt="Product Image">
+                            <i class="fas fa-heart heart-icon"></i>
+                            <!-- Le reste du contenu du product-item -->
+                            <div class="product-ombre">
+                                <div class="product-details">
+                                    <div class="product-title">GALACTIC HEROES</div>
+                                    <div class="product-price">$15.00</div>
+                                    <div class="star-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <a href="#galactic-heroes/" class="product-eye"><i class="fas fa-eye"></i></a>
+                                <div class="basket-button">
+                                    <a href="#" class="basket-icon"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- Fermez la div pour product-item ici -->
+                    <div class="product-item col-md-3">
+                        <a href="#" class="product-image-container">
+                            <img class="product-image" src="./image_manga/product19-copyright-600x700.jpg" alt="Product Image">
+                            <i class="fas fa-heart heart-icon-empty"></i>
+                                <!-- Le reste du contenu du product-item -->
+                            <div class="product-ombre">
+                                <div class="product-details">
+                                    <div class="product-title">
+                                        CHI’S SWEET HOME</div>
+                                    <div class="product-price">$9.00</div>
+                                    <div class="star-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <a href="#galactic-heroes/" class="product-eye"><i class="fas fa-eye"></i></a>
+                                <div class="basket-button">
+                                    <a href="#" class="basket-icon"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- Fermez la div pour product-item ici -->
+                    <div class="product-item col-md-3">
+                        <a href="#" class="product-image-container">
+                            <img class="product-image" src="./image_manga/product20-copyright-600x700.jpg" alt="Product Image">
+                            <i class="fas fa-heart heart-icon"></i>
+                                <!-- Le reste du contenu du product-item -->
+                            <div class="product-ombre">
+                                <div class="product-details">
+                                    <div class="product-title">THE LEGEND OF HEI</div>
+                                    <div class="product-price">$12.00</div>
+                                    <div class="star-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <a href="#galactic-heroes/" class="product-eye"><i class="fas fa-eye"></i></a>
+                                <div class="basket-button">
+                                    <a href="#" class="basket-icon"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- Fermez la div pour product-item ici -->            
+                    <div class="product-item col-md-3">
+                        <a href="#" class="product-image-container">
+                            <img class="product-image" src="./image_manga/product21-copyright-600x700.jpg" alt="Product Image">
+                            <i class="fas fa-heart heart-icon"></i>
+                            <!-- Le reste du contenu du product-item -->
+                        <div class="product-ombre">
+                            <div class="product-details">
+                                <div class="product-title">GHOST IN THE SHELL</div>
+                                <div class="product-price">$14.00</div>
+                                <div class="star-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <a href="#galactic-heroes/" class="product-eye"><i class="fas fa-eye"></i></a>
+                            <div class="basket-button">
+                                <a href="#" class="basket-icon"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        </a> 
+                    </div> <!-- Fermez la div pour product-item ici -->   
+                    <div class="product-item col-md-3">
+                        <a href="#" class="product-image-container">
+                            <img class="product-image" src="./image_manga/product22-copyright-600x700.jpg" alt="Product Image">
+                            <i class="fas fa-heart heart-icon"></i>
+                            <!-- Le reste du contenu du product-item -->
+                            <div class="product-ombre">
+                                <div class="product-details">
+                                    <div class="product-title">KOTARO LIVES ALONE</div>
+                                    <div class="product-price">$17.00</div>
+                                    <div class="star-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <a href="#galactic-heroes/" class="product-eye"><i class="fas fa-eye"></i></a>
+                                <div class="basket-button">
+                                    <a href="#" class="basket-icon"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- Fermez la div pour product-item ici -->
+                    <div class="product-item col-md-3">
+                        <a href="#" class="product-image-container">
+                            <img class="product-image" src="./image_manga/product23-copyright-600x700.jpg" alt="Product Image">
+                            <i class="fas fa-heart heart-icon-empty"></i>
+                                <!-- Le reste du contenu du product-item -->
+                            <div class="product-ombre">
+                                <div class="product-details">
+                                    <div class="product-title">
+                                            OURAN HIGH SCHOOLE</div>
+                                    <div class="product-price">$15.00</div>
+                                    <div class="star-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <a href="#galactic-heroes/" class="product-eye"><i class="fas fa-eye"></i></a>
+                                <div class="basket-button">
+                                    <a href="#" class="basket-icon"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- Fermez la div pour product-item ici -->
+                    <div class="product-item col-md-3">
+                        <a href="#" class="product-image-container">
+                            <img class="product-image" src="./image_manga/product24-copyright-600x700.jpg" alt="Product Image">
+                            <i class="fas fa-heart heart-icon"></i>
+                                <!-- Le reste du contenu du product-item -->
+                            <div class="product-ombre">
+                                <div class="product-details">
+                                    <div class="product-title">HEROES ACADEMY</div>
+                                    <div class="product-price">$16.00</div>
+                                    <div class="star-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"fill="#fff">
+                                            <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <a href="#galactic-heroes/" class="product-eye"><i class="fas fa-eye"></i></a>
+                                <div class="basket-button">
+                                    <a href="#" class="basket-icon"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- Fermez la div pour product-item ici -->            
+                    <div class="product-item col-md-3">
+                        <a href="#" class="product-image-container">
+                            <img class="product-image" src="./image_manga/product25-copyright-600x700.jpg" alt="Product Image">
+                            <i class="fas fa-heart heart-icon"></i>
+                            <!-- Le reste du contenu du product-item -->
+                        <div class="product-ombre">
+                            <div class="product-details">
+                                <div class="product-title">YONA OF THE DAWN</div>
+                                <div class="product-price">$13.00</div>
+                                <div class="star-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                        <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <a href="#galactic-heroes/" class="product-eye"><i class="fas fa-eye"></i></a>
+                            <div class="basket-button">
+                                <a href="#" class="basket-icon"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                        </a> 
+                    </div> <!-- Fermez la div pour product-item ici -->  
+                <!-- </div> -->
+            </div>
+            <div class="sc_item_button sc_button_wrap sc_align_center">
+                <a href="/about" class="sc_button sc_button_decoration sc_button_size_normal sc_button_icon_left color_style_link2">
+                    <span class="sc_button_text">
+                        <span class="sc_button_title mr-1">Voir toutes les collections</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                        <!-- <a href="https://otaku.ancorathemes.com/shop/" class="sc_button">
+                            <span class="sc_button_text">
+                                <span class="sc_button_title mr-2">VOIR LES DÉTAILS</span> 
+                            </span>
+                        </a> -->
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- alaune.css -->
+    <section  class="custom-section custom-dark-section custom-boxed-section custom-default-height-section custom-fly-static-section">
+        <div class="custom-background-overlay">
+            <div class="custom-container custom-column-gap-extended">
+                <div class="custom-column custom-col-100 custom-top-column custom-inner-width-none custom-content-align-inherit custom-layouts-column-icons-position-left custom-fly-static-column">
+                    <div class="custom-widget-wrap custom-element-populated">
+                        <div class="custom-element custom-height-huge custom-fly-static custom-widget custom-widget-spacer">
+                            <div class="custom-widget-container">
+                                <div class="custom-spacer">
+                                    <div class="custom-spacer-inner">REGARDER EN LIGNE</div>
+                                    <div class="custom-spacer">DES FILMS ANIMÉS CHAQUE LUNDI, MARDI ET VENDREDI À 16H. <br>LES REDIFFUSIONS À 10H.</div>
+                                    <div class="sc_alaune_button">
+                                        <a href="https://otaku.ancorathemes.com/shop/" class="sd_button">
+                                            <span class="sc_button_text">
+                                                <span class="sc_button_title mr-2">VOIR LES DÉTAILS</span> 
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section class="custom-section-with-gradient"></section>
+    <!-- online.css -->
+    <section class="custom-selection inner-section boxed-section default-section" data-id="custom-section-id" data-element_type="section">
+        <div class="custom-container column-gap-no">
+            <div class="custom-column inner-column sc_inner_width_none content-align-inherit icons-position-left static-column" data-id="inner-column-id" data-element_type="column">
+                <div class="widget-wrap element-populated">
+                    <div class="custom-widget sc_title_widget static-widget" data-id="title-widget-id" data-element_type="widget" data-widget_type="trx_sc_title.default">
+                        <div class="widget-container">
+                            <div class="sc_title sc_title_default">
+                                <span class="sc_item_subtitle">En ligne</span>
+                                    <h1 class="sc_item_title">
+                                        <span class="sc_item_title_text">Pour ce mois</span>
+                                        <div class="swiper-custom-buttons">
+                                            <div class="swiper-button-prev-custom">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                                    <path fill="currentColor" d="M10 6L4 12l6 6L8.41 19.41L2.83 13H14v-2H2.83l5.59-5.59L10 6z"/>
+                                                </svg> -->
+                                                <i class="fas fa-arrow-left"></i>
+                                            </div>
+                                            <div class="swiper-button-next-custom">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                                    <path fill="currentColor" d="M14 7l5 5-5 5-1.41-1.41L16.17 13H3v-2h13.17l-2.58-2.59L14 7z"/>
+                                                </svg> -->
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                     </h1>
+                             </div>
+                             <div style="background-color: black!important;" class="swiper-container">
+                                <!-- Boutons de navigation personnalisés -->                           
+                                <div class="swiper-wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="swiper-slide">
+                                      <div class="product-swiper">
+                                          <a href="#" class="product-image-container-swiper">
+                                              <img class="swiper-image" src="./image_manga/product26-copyright-600x700.jpg" alt="Product Image">
+                                              <i class="fas fa-heart heart-icon-swiper"></i>
+                                              <!-- Le reste du contenu du product-swipe   -->
+                                              <div class="product-ombre-swiper">
+                                                  <div class="product-details-swiper">
+                                                      <div class="product-title-swiper"> SILVER SPOON
+                                                          </div>
+                                                      <div class="product-price-swiper">$15.00</div>
+                                                      <div class="star-container-swiper">
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="product-info-swiper">
+                                                  <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                                                  <div class="basket-button-swiper">
+                                                      <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                                                  </div>
+                                              </div>
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <!-- Slide 2 -->
+                                     <div class="swiper-slide">
+                                          <div class="product-swiper">
+                                              <a href="#" class="product-image-container-swiper">
+                                                  <img class="swiper-image" src="./image_manga/product27-copyright-600x700.jpg" alt="Product Image">
+                                                  <i class="fas fa-heart heart-icon-empty-swiper"></i>
+                                                      <!-- Le reste du contenu du product-swiper -->
+                                                  <div class="product-ombre-swiper">
+                                                      <div class="product-details-swiper">
+                                                          <div class="product-title-swiper">SWORD OF THE STRANGER</div>
+                                                          <div class="product-price-swiper">$15.00</div>
+                                                          <div class="star-container-swiper">
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="product-info-swiper">
+                                                      <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                                                      <div class="basket-button-swiper">
+                                                          <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                                                      </div>
+                                                  </div>
+                                              </a>
+                                          </div> <!-- Fermez la div pour product-swiper ici -->
+                                      </div>
+                                        <!-- Slide 3 -->
+                                      <div class="swiper-slide">
+                                          <div class="product-swiper">
+                                              <a href="#" class="product-image-container-swiper">
+                                                  <img class="swiper-image" src="./image_manga/product28-copyright-600x700.jpg" alt="Product Image">
+                                                  <i class="fas fa-heart heart-icon-swiper"></i>
+                                                      <!-- Le reste du contenu du product-swiper -->
+                                                  <div class="product-ombre-swiper">
+                                                      <div class="product-details-swiper">
+                                                          <div class="product-title-swiper">WHISPER OF THE HEART</div>
+                                                          <div class="product-price-swiper">$17.00</div>
+                                                          <div class="star-container-swiper">
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"fill="#fff">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="product-info-swiper">
+                                                      <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                                                      <div class="basket-button-swiper">
+                                                          <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                                                      </div>
+                                                  </div>
+                                              </a>
+                                          </div> <!-- Fermez la div pour product-swiper ici -->  
+                                      </div>
+                                      <!-- Slide 4 -->
+                                      <div class="swiper-slide">
+                                          <div class="product-swiper">
+                                              <a href="#" class="product-image-container-swiper">
+                                                  <img class="swiper-image" src="./image_manga/product29-copyright-600x700.jpg" alt="Product Image">
+                                                  <i class="fas fa-heart heart-icon-swiper"></i>
+                                                  <!-- Le reste du contenu du product-swiper -->
+                                              <div class="product-ombre-swiper">
+                                                  <div class="product-details-swiper">
+                                                      <div class="product-title-swiper"> FAIRIES ALBUMS </div>
+                                                      <div class="product-price-swiper">$19.00</div>
+                                                      <div class="star-container-swiper">
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="product-info-swiper">
+                                                  <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                                                  <div class="basket-button-swiper">
+                                                      <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                                                  </div>
+                                              </div>
+                                              </a> 
+                                          </div> <!-- Fermez la div pour product-swiper ici --> 
+                                      </div>
+                                      <!-- Slide 5 -->
+                                      <div class="swiper-slide">
+                                          <div class="product-swiper">
+                                              <a href="#" class="product-image-container-swiper">
+                                                  <img class="swiper-image" src="./image_manga/product8-copyright-600x700.jpg" alt="Product Image">
+                                                  <i class="fas fa-heart heart-icon-swiper"></i>
+                                                  <!-- Le reste du contenu du product-swiper -->
+                                              <div class="product-ombre-swiper">
+                                                  <div class="product-details-swiper">
+                                                      <div class="product-title-swiper">JUJUTSU KAISEN</div>
+                                                      <div class="product-price-swiper">$28.00</div>
+                                                      <div class="star-container-swiper">
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                              <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                          </svg>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="product-info-swiper">
+                                                  <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                                                  <div class="basket-button-swiper">
+                                                      <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                                                  </div>
+                                              </div>
+                                              </a> 
+                                          </div> <!-- Fermez la div pour product-swiper ici --> 
+                                      </div>
+                                      <!-- Slide 6 -->
+                                      <div class="swiper-slide">
+                                          <div class="product-swiper">
+                                              <a href="#" class="product-image-container-swiper">
+                                                  <img class="swiper-image" src="./image_manga/product38-copyright-600x700.jpg" alt="Product Image">
+                                                  <i class="fas fa-heart heart-icon-empty-swiper"></i>
+                                                  <!-- Le reste du contenu du product-swiper -->
+                                                  <div class="product-ombre-swiper">
+                                                      <div class="product-details-swiper">
+                                                          <div class="product-title-swiper">MY ORDINARY LIFE</div>
+                                                          <div class="product-price-swiper">$13.00</div>
+                                                          <div class="star-container-swiper">
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#E3962B">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                                                                  <path d="M12 2l2.4 7h7.6l-6 4.8 2.4 7-6-4.8-6 4.8 2.4-7-6-4.8h7.6z"/>
+                                                              </svg>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="product-info-swiper">
+                                                      <a href="#galactic-heroes/" class="product-eye-swiper"><i class="fas fa-eye"></i></a>
+                                                      <div class="basket-button-swiper">
+                                                          <a href="#" class="basket-icon-swiper"><i class="fas fa-shopping-cart"></i></a>
+                                                      </div>
+                                                  </div>
+                                              </a> 
+                                          </div> <!-- Fermez la div pour product-swiper ici --> 
+                                      </div>
+                                
+                                    <!-- Ajoutez d'autres slides de la même manière -->
+                                
+                                </div> 
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price_title">
+            <span class="price_item_subtitle">Packages</span>
+            <h1 class="price_item_title_tag">
+              <span class="price_item_title_text">Nos prix</span>
+            </h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="price-item">
+                    <div class="price-item-info-top">
+                      <h3 class="price-item-title"><span>Decouverte</span></h3>
+                      <span class="decouverte">Forfait Journalier</span>
+                    </div>
+                    <div class="price-item-info">
+                      <div class="price-item-price">
+                        <span class="price-item-price-valeur">Gratuit</span>
+                      </div>
+                      <div class="price-item-price">
+                        <span class="price-item-price-apres">Jour</span>
+                      </div> 
+                      <a href="/about" class="price-item-link4 button">Essayer Maintenant</a>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info-top">
+                      <h3 class="price-item-title"><span>Hebdomadaire</span></h3>
+                      <span class="decouverte">Forfait Passion </span>
+                    </div>
+                    <div class="price-item-info">
+                      <div class="price-item-price">
+                        <span class="price-item-price-valeur">1 500 FCFA</span>
+                      </div>
+                      <div class="price-item-price">
+                        <span class="price-item-price-apres">Semaine</span>
+                      </div> 
+                      <a href="#" class="price-item-link1 button">Acheter Maintenant</a>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info-top">
+                      <h3 class="price-item-title"><span>Deux Mois</span></h3>
+                      <span class="decouverte">Forfait Mordu de Manga</span>
+                    </div>
+                    <div class="price-item-info">
+                      <div class="price-item-price">
+                        <span class="price-item-price-valeur">10 500 FCFA</span>
+                      </div>
+                      <div class="price-item-price">
+                        <span class="price-item-price-apres">Mois</span>
+                      </div>
+                      <a href="#" class="price-item-link3 button">Acheter Maintenant</a>
+                    </div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-info-top">
+                      <h3 class="price-item-title"><span>Un An</span></h3>
+                      <span class="decouverte">Forfait Ultime</span>
+                    </div>
+                    <div class="price-item-info">
+                      <div class="price-item-price">
+                        <span class="price-item-price-value">20 900 FCFA</span>
+                      </div>
+                      <div class="price-item-price">
+                        <span class="price-item-price-after">Année</span>
+                      </div> 
+                      <a href="#" class="price-item-link2 button">Acheter Maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-container-under-price">
+                <p class="under-price">Plongez dans l'action, ressentez l'émotion et vivez l'aventure avec  <br> nos packages conçus pour répondre à toutes les attentes des amateurs de manga.</p>
+        </div> 
+    </section>
+    
+    <!-- testimonial -->
+    <section class="spacer">     
+        <div class="testimonial-section">
+            <div class="swiper-custom-boutons">
+                <div class="swiper-button-prev-customize">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="swiper-button-next-customize">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div> 
+            <div class="testi-user-img swiper-container">
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide slider-space">
+                                <img class="u3" src="./image_manga/testimonial-01-copyright-120x120.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide slider-space">
+                                <img class="u1" src="./image_manga/testimonial-02-copyright-120x120.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide slider-space">
+                                <img class="u2" src="./image_manga/testimonial-03-copyright-120x120.jpg" alt="">
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-saying">
+                <div class="swiper-container testimonial">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper ">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="quote">
+                                        <!-- <img class="quote-icon" src="./image_manga/quote.png" alt=""> -->
+                                        <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit aut fugit, sed. Beatae vitae dicta. Adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        <p>Labore et dolore magna aliqua ut enim ad minim. Adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="name">-Ananya Gupta-</div>
+                                    <div class="designation">Étudiant en informatique</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="quote">
+                                        <!-- <img class="quote-icon" src="./image_manga/quote.png" alt=""> -->
+                                    
+                                        <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit aut fugit, sed. Beatae vitae dicta. Adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        <p>Labore et dolore magna aliqua ut enim ad minim. Adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="name">-Arjun Singh-</div>
+                                    <div class="designation">Aspirant développeur</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="quote">
+                                        <!-- <img class="quote-icon" src="./image_manga/quote.png" alt=""> -->
+                                        
+                                        <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit aut fugit, sed. Beatae vitae dicta. Adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        <p>Labore et dolore magna aliqua ut enim ad minim. Adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="name">-Priya Sharma-</div>
+                                    <div class="designation">Passionné de science</div>
+                                    
+                                </div>
+                            </div>          
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+                    
+                </div>
+            </div>    
+        </div>
+    </section>
+
+
+    <section class="testimonial-header">
+        <div class="testimonial-header-content">
+            <h2>TÉMOIGNAGES</h2>
+        </div>
+    </section>
+
+
+    <div class="spacer-widget">
+        <div class="mt-5 mb-3 widget-title">
+            <div class="widget-container">
+                <div class="title-content">
+                    <span class="subtitle">ARTICLES RÉCENTS</span>
+                    <h1 class="main-title">DERNIÈRES NOUVELLES</h1>
+                </div>
+            </div>
+            <div class="swiper-blog">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide classic_swiper_slide_blog">
+                        <div class="blog-item">
+                            <div class="blog-item-body">
+                                <div class="blog-featured mb-3">
+                                    <img loading="lazy" src="./image_manga/post-image1-copyright-890x664.jpg" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                <div class="mb-2 sc_blogger_item_content">
+                                    <div class="post_meta_categories">
+                                        <span class="post_meta_anime">
+                                            <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                        </span>
+                                    </div>
+                                    <h5 class="entry-title" data-item-number="2">
+                                        <a class="title_blog" href="#" rel="bookmark">The first volume of revenger manga adaptation is released</a>
+                                    </h5>
+                                    <div class="sc_blogger_item_date">
+                                        <span class="mr-3 post_meta_item post_date">
+                                            <a href="#">Apr 21, 2020</a>
+                                        </span>
+                                        <a href="#" class="post_meta_comments">
+                                            <span class="post_meta_number">0</span>
+                                            <span class="comment">Comments</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide classic_swiper_slide_blog">
+                        <div class="blog-item">
+                            <div class="blog-item-body">
+                                <div class="blog-featured mb-3">
+                                    <img loading="lazy" src="./image_manga/post-image2-copyright-890x664.jpg" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                 <div class="mb-2 sc_blogger_item_content">
+                                    <div class="post_meta_categories">
+                                        <span class="post_meta_anime">
+                                            <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                        </span>
+                                    </div>
+                                    <h5 class="entry-title" data-item-number="2">
+                                        <a class="title_blog" href="#" rel="bookmark">Patiently waiting: top 10 anime that deserve a sequel</a>
+                                    </h5>
+                                    <div class="sc_blogger_item_date">
+                                        <span class="mr-3 post_meta_item post_date">
+                                            <a href="#">Apr 21, 2020</a>
+                                        </span>
+                                        <a href="#" class="post_meta_comments">
+                                            <span class="post_meta_number">0</span>
+                                            <span class="comment">Comments</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- Slide 3 -->
+                    <div class="swiper-slide classic_swiper_slide_blog">
+                        <div class="blog-item">
+                            <div class="blog-item-body">
+                                <div class="blog-featured mb-3">
+                                    <img loading="lazy" src="./image_manga/post-image3-copyright-890x664.jpg" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                 <div class="mb-2 sc_blogger_item_content">
+                                    <div class="post_meta_categories">
+                                        <span class="post_meta_anime">
+                                            <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                        </span>
+                                    </div>
+                                    <h5 class="entry-title" data-item-number="2">
+                                        <a class="title_blog" href="#" rel="bookmark">Black clover: sword of the wizard king review is out now</a>
+                                    </h5>
+                                    <div class="sc_blogger_item_date">
+                                        <span class="mr-3 post_meta_item post_date">
+                                            <a href="#">Apr 21, 2020</a>
+                                        </span>
+                                        <a href="#" class="post_meta_comments">
+                                            <span class="post_meta_number">0</span>
+                                            <span class="comment">Comments</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide classic_swiper_slide_blog">
+                        <div class="blog-item">
+                            <div class="blog-item-body">
+                                <div class="blog-featured mb-3">
+                                    <img loading="lazy" src="./image_manga/post-image4-copyright-890x664.jpg" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                 <div class="mb-2 sc_blogger_item_content">
+                                    <div class="post_meta_categories">
+                                        <span class="post_meta_anime">
+                                            <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                        </span>
+                                    </div>
+                                    <h5 class="entry-title" data-item-number="2">
+                                        <a class="title_blog" href="#" rel="bookmark">Anime expo 2023 recap | Los Angeles Anime Convention</a>
+                                    </h5>
+                                    <div class="sc_blogger_item_date">
+                                        <span class="mr-3 post_meta_item post_date">
+                                            <a href="#">Apr 21, 2020</a>
+                                        </span>
+                                        <a href="#" class="post_meta_comments">
+                                            <span class="post_meta_number">0</span>
+                                            <span class="comment">Comments</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide classic_swiper_slide_blog">
+                        <div class="blog-item">
+                            <div class="blog-item-body">
+                                <div class="blog-featured mb-3">
+                                    <img loading="lazy" src="./image_manga/image04-copyright-890x664.jpg" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                 <div class="mb-2 sc_blogger_item_content">
+                                    <div class="post_meta_categories">
+                                        <span class="post_meta_anime">
+                                            <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                        </span>
+                                    </div>
+                                    <h5 class="entry-title" data-item-number="2">
+                                        <a class="title_blog" href="#" rel="bookmark">Fierce conflict: top 10 greatest anime battles of all time</a>
+                                    </h5>
+                                    <div class="sc_blogger_item_date">
+                                        <span class="mr-3 post_meta_item post_date">
+                                            <a href="#">Apr 21, 2020</a>
+                                        </span>
+                                        <a href="#" class="post_meta_comments">
+                                            <span class="post_meta_number">0</span>
+                                            <span class="comment">Comments</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- Ajoutez d'autres slides de la même manière -->
+                
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- <div class="blog-section">
+                <div class="blog-container">
+                    <div class="blog-widget">
+                        <div class="blog-slider-outer">
+                            <div class="blog-slider-container">
+                                <div class="blog-slider mt-4">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="blog-item">
+                                                <div class="blog-item-body">
+                                                    <div class="blog-featured mb-3">
+                                                        <img loading="lazy" src="https://otaku.ancorathemes.com/wp-content/uploads/2020/04/post-image1-copyright-890x664.jpg" alt="">
+                                                        <div class="mask"></div>
+                                                    </div>
+                                                    <div class="mb-2 sc_blogger_item_content">
+                                                        <div class="post_meta_categories">
+                                                            <span class="post_meta_anime">
+                                                                <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                                            </span>
+                                                        </div>
+                                                        <h5 class="entry-title" data-item-number="2">
+                                                            <a class="title_blog" href="#" rel="bookmark">The first volume of revenger manga adaptation is released</a>
+                                                        </h5>
+                                                        <div class="sc_blogger_item_date">
+                                                            <span class="mr-3 post_meta_item post_date">
+                                                                <a href="#">Apr 21, 2020</a>
+                                                            </span>
+                                                            <a href="#" class="post_meta_comments">
+                                                                <span class="post_meta_number">0</span>
+                                                                <span class="comment">Comments</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>     
+                                        <div class="col-md-3">
+                                            <div class="blog-item">
+                                                <div class="blog-item-body">
+                                                    <div class="blog-featured mb-3">
+                                                        <img loading="lazy" src="https://otaku.ancorathemes.com/wp-content/uploads/2020/04/post-image2-copyright-890x664.jpg" alt="">
+                                                        <div class="mask"></div>
+                                                    </div>
+                                                     <div class="mb-2 sc_blogger_item_content">
+                                                        <div class="post_meta_categories">
+                                                            <span class="post_meta_anime">
+                                                                <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                                            </span>
+                                                        </div>
+                                                        <h5 class="entry-title" data-item-number="2">
+                                                            <a class="title_blog" href="#" rel="bookmark">Patiently waiting: top 10 anime that deserve a sequel</a>
+                                                        </h5>
+                                                        <div class="sc_blogger_item_date">
+                                                            <span class="mr-3 post_meta_item post_date">
+                                                                <a href="#">Apr 21, 2020</a>
+                                                            </span>
+                                                            <a href="#" class="post_meta_comments">
+                                                                <span class="post_meta_number">0</span>
+                                                                <span class="comment">Comments</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="col-md-3">
+                                            <div class="blog-item">
+                                                <div class="blog-item-body">
+                                                    <div class="blog-featured mb-3">
+                                                        <img loading="lazy" src="https://otaku.ancorathemes.com/wp-content/uploads/2020/04/post-image3-copyright-890x664.jpg" alt="">
+                                                        <div class="mask"></div>
+                                                    </div>
+                                                     <div class="mb-2 sc_blogger_item_content">
+                                                        <div class="post_meta_categories">
+                                                            <span class="post_meta_anime">
+                                                                <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                                            </span>
+                                                        </div>
+                                                        <h5 class="entry-title" data-item-number="2">
+                                                            <a class="title_blog" href="#" rel="bookmark">Black clover: sword of the wizard king review is out now</a>
+                                                        </h5>
+                                                        <div class="sc_blogger_item_date">
+                                                            <span class="mr-3 post_meta_item post_date">
+                                                                <a href="#">Apr 21, 2020</a>
+                                                            </span>
+                                                            <a href="#" class="post_meta_comments">
+                                                                <span class="post_meta_number">0</span>
+                                                                <span class="comment">Comments</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="col-md-3">
+                                            <div class="blog-item">
+                                                <div class="blog-item-body">
+                                                    <div class="blog-featured mb-3">
+                                                        <img loading="lazy" src="https://otaku.ancorathemes.com/wp-content/uploads/2020/04/post-image4-copyright-890x664.jpg" alt="">
+                                                        <div class="mask"></div>
+                                                    </div>
+                                                     <div class="mb-2 sc_blogger_item_content">
+                                                        <div class="post_meta_categories">
+                                                            <span class="post_meta_anime">
+                                                                <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                                            </span>
+                                                        </div>
+                                                        <h5 class="entry-title" data-item-number="2">
+                                                            <a class="title_blog" href="#" rel="bookmark">Anime expo 2023 recap | Los Angeles Anime Convention</a>
+                                                        </h5>
+                                                        <div class="sc_blogger_item_date">
+                                                            <span class="mr-3 post_meta_item post_date">
+                                                                <a href="#">Apr 21, 2020</a>
+                                                            </span>
+                                                            <a href="#" class="post_meta_comments">
+                                                                <span class="post_meta_number">0</span>
+                                                                <span class="comment">Comments</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="col-md-3">   
+                                            <div class="blog-item">
+                                                <div class="blog-item-body">
+                                                    <div class="blog-featured mb-3">
+                                                        <img loading="lazy" src="https://otaku.ancorathemes.com/wp-content/uploads/2023/07/image04-copyright-890x664.jpg" alt="">
+                                                        <div class="mask"></div>
+                                                    </div>
+                                                     <div class="mb-2 sc_blogger_item_content">
+                                                        <div class="post_meta_categories">
+                                                            <span class="post_meta_anime">
+                                                                <a class="anime_blog" href="#" rel="category tag">Anime</a>
+                                                            </span>
+                                                        </div>
+                                                        <h5 class="entry-title" data-item-number="2">
+                                                            <a class="title_blog" href="#" rel="bookmark">Fierce conflict: top 10 greatest anime battles of all time</a>
+                                                        </h5>
+                                                        <div class="sc_blogger_item_date">
+                                                            <span class="mr-3 post_meta_item post_date">
+                                                                <a href="#">Apr 21, 2020</a>
+                                                            </span>
+                                                            <a href="#" class="post_meta_comments">
+                                                                <span class="post_meta_number">0</span>
+                                                                <span class="comment">Comments</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+
+    
+   <footer class="custom-footer-cursor">
+    <!-- <div class="custom-cursor"></div> -->
+        <section class="custom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="column-id col-md-6">
+                        <div class="mt-4 mb-4 logo-footer">
+                            <a href="/" class="logo">
+                                <img class="logo_image" src="./image_manga/logo-light.webp"  alt="Otaku" width="110" height="39">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-id col-md-6">
+                        <div class="mt-4 mb-4 heading-footer">
+                            <h1 class="custom-heading"> Nous ne fournissons que des <br/> vidéos de qualité.</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <div class="newsletter_title">
+                            <h6 class="newsletter_h1">
+                              <span class="newsletter_span">Newsletter Signup</span>
+                            </h6>
+                        </div>                                      
+                        <form action="">
+                            <div class="form-container">
+                                <div class="icon-footer-message">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <input type="text" placeholder="Entrez votre adresse E-mail" name="mail" required>
+                                <button class="btn-footer" type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="subscribe" id="subscribe-checkbox">
+                                <label for="subscribe-checkbox">
+                                    <span>J'accepte</span>
+                                    <a href="/privacy-policy/" target="_blank">la politique de confidentialité.</a>.
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="menu-container">
+                            <div class="menu-section">
+                                <h2 class="menu-title">SUIVEZ-NOUS</h2>
+                                <ul class="menu-list">
+                                    <li><a  class="socialy" href="#">Facebook</a></li>
+                                    <li><a class="socialy" href="#">Twitter</a></li>
+                                    <li><a class="socialy" href="#">Dribble</a></li>
+                                    <li><a class="socialy" href="#">Instagram</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-section">
+                                <h2 class="menu-title">OTAKU</h2>
+                                <ul class="menu-list">
+                                    <li><a  class="menu-footer" href="#">Services</a></li>
+                                    <li><a class="menu-footer" href="#">About Us</a></li>
+                                    <li><a class="menu-footer" href="#">FAQs</a></li>
+                                    <li><a class="menu-footer" href="#">News</a></li>
+                                    <li><a class="menu-footer" href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-section">
+                                <h2 class="menu-title">Dites bonjour</h2>
+                                <p class="contact-info"><a href="mailto:info@email.com">info@email.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-12">
+                    <div class="footer-text">
+                        <p>OneVision © <span id="currentYear"></span> All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+   </footer>
+
+
+    <!-- chat.css -->
+    <div class="chat-widget-container">
+        <button id="chat-button" aria-label="Open chat widget" class="chat-button">
+            <i class="material-icons type1">
+                <svg id="ic_bubble" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+            </i>
+        </button>
+        <div id="chat-widget" class="chat-widget">
+            <div class="chat-header">
+                <img src="lien_vers_l'image_de_user_leonard.jpg" alt="User Leonard">
+                <p>Hi there</p>
+                <p>Welcome to our Presale Chat. Ask us anything</p>
+            </div>
+            <div class="chat-messages">
+   
+           </div>
+            <!-- <div class="chat-messages">
+                <div class="chat-message received">
+                    <div class="user-avatar">
+                        <img src="url_de_limage_de_leonard" alt="Leonard">
+                    </div>
+                    <div class="message-content">
+                        <p>Hi there! Welcome to our Presale Chat. Ask us anything.</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="chat-input">
+                <input type="text" placeholder="Enter your message...">
+                <button id="send-button">
+                    <i class="material-icons type2 for-opened">
+                        <svg id="ic_send" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                        </svg>
+                    </i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="frame-content">
+        <div class="widget-position-left sidebar-position-right dynamic">
+            <button class="widgetLabel moveFromLeftLabel-enter-done" type="button" style="">
+                <span>Presale Chat</span>
+            </button>
+            <div id="button" data-testid="widgetButton" class="chat-closed mobile-size__small bubbleAnimationReturn-enter-done">
+                <div class="buttonWave"></div>
+                <button type="button" id="button-body" data-testid="widgetButtonBody" class="chrome" tabindex="0" aria-label="Open chat widget" style="background: rgb(73, 185, 59); box-shadow: rgba(2, 6, 16, 0.2) 0px 4px 24px;">
+                    <i class="material-icons type1 for-closed active" style="color: rgb(255, 255, 255);">
+                        <svg id="ic_bubble" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                        </svg>
+                    </i>
+                    <i class="material-icons type2 for-closed active">
+                        <svg id="ic_create" fill="blue" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                        </svg>
+                    </i>
+                    <i class="material-icons type1 for-opened " style="color: rgb(255, 255, 255);">
+                        <svg id="ic_send" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                        </svg>
+                    </i>
+                    <i class="material-icons type2 for-opened ">
+                        <svg id="ic_send" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                        </svg>
+                    </i>
+                </button>
+            </div>
+        </div>
+    </div> -->
+     
+    <!-- <div id="mouse"></div> -->
+
+    <div class="custom-cursor"> 
+        <div class="open-tag">&lt;/&gt;</div> 
+   </div>
+    <div class="custom-cursor-before"></div> 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./js/swiper.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <script src="./js/toggleSearch.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/languages.js"></script>
+    <script src="./js/animeportailVideo.js"></script>
+    <script src="./js/chat.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/testimonial.js"></script>
+    <script src="./js/swiper_blog.js"></script>
+    
+      <!-- custom js -->
+  <script src="./js/custom.js"></script>
+  <script src="./js/date.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
+

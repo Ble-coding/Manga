@@ -1,0 +1,717 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&display=swap");
+
+
+/* Appliquer la police au corps du document */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'bebas neue';
+}
+/* html {
+  cursor: none;
+}
+#mouse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: none;
+  border-radius: 50%;
+  border: 2px solid #FAB818;
+  transform: translate(-50%, -50%); 
+} */
+
+.custom-cursor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color:  #141519;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centre le contenu horizontalement */
+}
+
+.custom-cursor .open-tag {
+  color:  white;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+
+.custom-cursor-before {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 40px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 40px;
+  transition: 0.2s ease;
+  opacity: 1;
+  pointer-events: none;
+} 
+
+h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .point {
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    border:1px solid  white;
+    margin: 2px;
+    border-radius: 10px;
+  }
+
+
+/* Define basic styles for the header */
+.page_wrap {
+  position: relative;
+  background-color: #000;
+  height: 300px; /* Ajustez la hauteur selon vos besoins */
+  z-index: 3;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.animated-content {
+  height: 100%; /* Utilisez la hauteur totale du parent */
+  overflow: hidden;
+}
+
+.animated-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%; /* Positionnez le côté gauche au centre */
+  width: 100%;
+  height: 100%;
+  background-image: url('../image_manga/copyright.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: slideInFromCenter 1.5s ease-out;
+  z-index: -1; /* Assurez-vous que l'élément image est en arrière-plan du contenu */
+  transform: translateX(-50%); /* Corrigez la position en fonction de la largeur de l'écran */
+}
+
+@keyframes slideInFromCenter {
+  from {
+    transform: translateX(-50%) scale(0); /* Commencez du centre avec une échelle nulle */
+  }
+  to {
+    transform: translateX(-50%) scale(1); /* Finissez au centre avec une échelle complète */
+  }
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.logo_image {
+    width: 110px;
+    height: 39px;
+}
+
+nav {
+    margin-top: 20px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin-right: 20px;
+    position: relative;
+    border-bottom: 2px solid transparent; /* Ajout de cette ligne pour retirer la bordure inférieure par défaut */
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-item a:hover {
+    text-decoration: none; /* Ajout de cette ligne pour supprimer la ligne par défaut au survol */
+    color: #fff;
+}
+
+.menu-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.5s ease; /* Transition plus lente */
+}
+
+.menu-item:hover::after {
+    width: 100%;
+}
+
+.menu-item.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+.cart-icon, .search-icon, .user-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Ajustez la marge selon vos besoins */
+    font-size: 24px; /* Ajustez la taille de la police selon vos besoins */
+    color: #fff; /* Couleur de l'icône */
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    bottom: -5px; /* Ajustez la position verticale selon vos besoins */
+    right: -5px; /* Ajustez la position horizontale selon vos besoins */
+    background-color: orange;
+    color: #fff;
+
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-size: 13px;
+    margin: 0px 0px 0 6px;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.search-icon i {
+    position: relative;
+}
+
+.search-icon i:before {
+    content: '\f002'; /* Code Unicode pour la loupe fine */
+    font-family: 'Font Awesome 5 Free'; /* Assurez-vous d'inclure la bibliothèque Font Awesome */
+    font-weight: 6  00;
+    font-style: normal;
+}
+
+
+.over {
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 2;
+  position: relative; /* Ajoutez ceci */
+}
+
+.over .sidebar-item a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.over a:hover, .over a:focus {
+  color: #f1f1f1;
+}
+
+.over .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 30px;
+}
+
+
+  #sidebar {
+    width: 300px; /* Modifiez la largeur selon vos besoins */
+    max-width: 100%;
+    overflow-x: auto;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Position initiale en dehors de l'écran */
+    height: 100%;
+    padding: 20px 0; /* Ajoutez une marge intérieure de 20 pixels (ajustez selon vos besoins) */
+    background-color: wheat ; /* Ajoutez une couleur de fond si nécessaire */
+    transition: left 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+    z-index: 3; /* Valeur plus élevée que .custom_menu-btn */
+}
+
+
+
+
+#closeSidebar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px; /* Ajustez la largeur selon vos besoins */
+  height: 40px; /* Ajustez la hauteur selon vos besoins */
+  background-color: #eee; /* Fond transparent */
+  color: black; /* Couleur du texte */
+  border: none;
+  border-radius: 50%; /* Utilisez 50% pour obtenir un cercle */
+  cursor: pointer;
+  transition: transform 0.7s ease; /* La transition prend 0.3 seconde avec une accélération (ease) */
+}
+
+
+
+#closeSidebar img{
+  width:30px;
+  height: 30px;
+}
+
+
+/* Styles pour la barre latérale */
+#closeSidebar:hover {
+  transform: rotate(360deg); /* Rotation à 360 degrés au survol */
+}
+
+#closeSidebar:focus {
+  outline: none;
+  border-color: transparent; /* Bordure transparente lorsqu'il est activé */
+}
+
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  } 
+  
+
+#closeSidebar img{
+  width:30px;
+  height: 30px;
+}
+
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 60px auto 0 auto; /* Ajustez la marge pour centrer la barre latérale horizontalement */
+  align-items: center;
+  text-align: center; /* Ajoutez cette ligne pour centrer le texte horizontalement */
+}
+
+.sidebar-item {
+  padding: 10px;
+  /* transition: color 0.3s; */
+  position: relative;
+}
+
+.sidebar-item a {
+  color: #000!important;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+}
+
+
+
+.sidebar-item a:hover {
+  color: #818181!important;
+  text-decoration: none;
+  /* transition: color 0.3s; */
+  position: relative;
+  display: block;
+}
+
+
+.sidebar-item a::before,
+.sidebar-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease, margin 0.3s ease; /* Ajout de la transition pour la marge */
+}
+
+.sidebar-item a::before {
+  left: calc(50% - 8px);
+  margin-left: -5px;
+}
+
+.sidebar-item a::after {
+  right: calc(50% - 8px);
+  margin-right: -5px;
+}
+
+.sidebar-item a:hover::before,
+.sidebar-item a:hover::after {
+  width: 50%;
+  margin: 0 10px;
+}
+
+
+
+
+.button-container {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    /*height: 100vh; */
+  }
+  
+  .custom-button {
+    display: inline-block;
+    padding: 10px 55px;
+    text-decoration: none;
+    color: #141519;
+    background-color:  #FAB818;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-button:hover {
+    background-color: #f47521; /* Couleur au survol, ajustez selon vos besoins */
+    color: #000!important;
+    text-decoration: none;
+  }
+
+
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    margin: 0 40px;
+}
+
+.social-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+
+.social-icons .social-name:hover {
+    color: black; /* Couleur au survol */
+}
+
+.social-icons  i {
+    text-decoration: none !important;
+}
+
+/* Styles pour la ligne hr */
+
+
+#sidebar .custom-hr {
+    background-color: black;
+    height: 2px; /* Ajustez l'épaisseur de la ligne selon vos besoins */
+    width: 100%; /* La ligne occupe toute la largeur disponible */
+    margin: 25px 0 0 0; /* Supprime la marge à gauche */
+    padding: 3px 0px; /* Ajoutez le padding à gauche et à droite (ajustez selon vos préférences) */
+    border: none; /* Supprime la bordure par défaut */
+}
+
+#sidebar .custom-hr:first-child {
+    margin-top: 0; /* Supprime la marge supérieure du premier HR */
+}
+
+#sidebar .custom-hr:last-child {
+    margin-bottom: 0; /* Supprime la marge inférieure du dernier HR */
+}
+
+
+
+
+/* Styles pour la div d'informations */
+.info-container {
+    padding: 10px;
+    transition: color 0.3s;
+    text-align: left; /* Ajoutez cette ligne pour aligner le texte à gauche */
+    position: relative;
+    margin: 20px 0 0 45px;
+}
+
+.info-container strong {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.info-container p {
+    color: grey;
+    font-size: 17px;
+}
+
+
+  .select{
+    background: #000;
+    border: 2px solid wheat;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-radius: 0.5em; */
+    padding: 1em;
+     cursor: pointer;
+     transition: background 0.3s;
+  }
+
+
+  .select:hover{
+    color: wheat;
+    background-color: #141519;
+  }
+
+  .select-clicked{
+    border: 2px solid #333;
+    box-shadow: 0 0 0.9em #141519;
+  }
+
+
+
+  .caret{
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #eee;
+    transition: 0.3s;
+  }
+
+  .caret-rotate{
+    transform: rotate(180deg);
+  }
+
+  .menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #525252;
+    border:  0 0.4em 1em rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left:50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+  }
+
+  .menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  .menu:hover{
+    background: #141519;
+  }
+
+  /* .menu li:active{
+    background: wheat;
+    color: #000;
+  } */
+
+  .menu-open{
+    display: block;
+    opacity: 1;
+  }
+
+  
+  .menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  .menu:hover{
+    background: #141519;
+  }
+
+  .menu li:hover{
+    background: wheat;
+    color: #000;
+  }
+
+
+
+/* animation text header */
+  .column {
+    opacity: 0; /* Commencez avec une opacité de 0 pour cacher l'élément initialement */
+    transform: translateY(20px); /* Commencez avec une translation vers le bas */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Ajoutez une transition pour une animation fluide */
+}
+
+.column.show {
+    opacity: 1; /* Lorsque la classe 'show' est ajoutée, l'élément devient visible */
+    transform: translateY(0); /* L'élément revient à sa position d'origine */
+}
+
+  .container-fluid {
+  /* width: 100%; */
+  background-color: #000;
+  /* max-width: 1200px; */
+  /* margin: 0 auto;
+  z-index: 101 */
+  
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  width: 100%;
+}
+
+.text-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/* @import url('https://fonts.google.com/specimen/Bebas+Neue'); */
+
+
+.bordure {
+  box-shadow: inset 0px 1px rgba(255, 255, 255, 0.2), inset 0px -1px rgba(255, 255, 255, 0.2);
+}
+
+.titre-communaute {
+  font-size: 26px;
+  font-weight: 900; /* Augmentez la valeur ici */
+  color: white;
+  text-transform: uppercase;
+  word-spacing: -1px;
+  margin-bottom: 5px;
+}
+
+.culture-anime {
+  font-size: 16px;
+  font-weight: 900; /* Augmentez la valeur ici */
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.portail-video {
+  font-size: 197px;
+  font-weight: 900; /* Augmentez la valeur ici */
+  color: #e3962b;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 19px;
+}
+
+
+
+/* Media Query pour les écrans de petite taille (par exemple, les mobiles) */
+@media screen and (max-width: 767px) {
+
+  .over {
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2; /* Une valeur plus élevée que 9 */
+    position: relative; /* Ajoutez ceci */
+}
+
+#sidebar {
+    width: 300px;
+    max-width: 100%;
+    overflow-x: auto;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100%;
+    padding: 20px 0;
+    background-color: wheat;
+    transition: left 0.3s ease;
+    z-index: 3; /* Une valeur plus élevée que 10 */
+}
+
+    .titre-communaute {
+        font-size: 19px; /* Ajustez la taille de la police pour les mobiles */
+        margin-bottom: 3px; /* Ajustez la marge pour les mobiles */
+    }
+
+    .culture-anime {
+        font-size: 16px; /* Ajustez la taille de la police pour les mobiles */
+    }
+
+    .portail-video {
+        font-size: 67px; /* Ajustez la taille de la police pour les mobiles */
+        margin-bottom: 5px; /* Ajustez la marge pour les mobiles */
+        padding: 10px 0;
+        letter-spacing: 0px;
+    }
+}
+
+
+
+
+
+
+

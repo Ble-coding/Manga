@@ -1,0 +1,116 @@
+.custom-background-overlay {
+    position: relative;
+    background-image: url('../image_manga/bg-overlay01.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.custom-section {
+    position: relative; /* Ajoutez cette ligne */
+    background-image: url('../image_manga/main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+.custom-container {
+    padding: 60px;
+}
+  .custom-widget-container{
+    padding: 50px;
+  }
+
+  .custom-spacer-inner{
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin: 10px 0 0 16.2px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    margin: 20px; /* Adjust the margin as needed */
+  }
+
+  .custom-spacer{
+    font-size: 30px;
+    margin: 10px 0 0 16.2px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    margin: 20px; /* Adjust the margin as needed */
+  }
+  
+  .sc_alaune_button {
+    text-align: center;
+    margin: 20px; /* Adjust the margin as needed */
+}
+
+.sd_button {
+    display: inline-block;
+    padding: 16px  26px 14px 36px;
+    margin: 0 0 10px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    /* border-radius: 5px; */
+}
+
+.sd_button:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #1F242E;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+
+/* Media Query pour les écrans de petite taille (par exemple, les mobiles) */
+@media screen and (max-width: 767px) {
+    
+.custom-container {
+    padding: 30px;
+}
+  .custom-widget-container{
+    padding: 25px;
+  }
+
+  .custom-spacer-inner{
+    font-size: 14px;
+    margin: 7px 0 0 12.2px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    margin: 20px; /* Adjust the margin as needed */
+  }
+
+  .custom-spacer{
+    font-size: 20px;
+    margin: 7px 0 0 12.2px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    margin: 20px; /* Adjust the margin as needed */
+  }
+  
+  .sc_alaune_button {
+    text-align: center;
+    margin: 13px; /* Adjust the margin as needed */
+}
+
+
+    /* .sd_button:hover {
+        text-decoration: none;
+        background-color: white;
+        color: #1F242E;
+        letter-spacing: 2px;
+        transition: 0.5s;
+    } */
+
+
+  
+}

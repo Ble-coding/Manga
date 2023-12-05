@@ -1,0 +1,301 @@
+footer{
+    background-color:  #161616;
+    /* cursor: none; */
+}
+/* .custom-footer-cursor .custom-cursor {
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.3;
+}
+ */
+
+
+.custom-footer{
+    color: #fff;
+}
+
+.column-id{
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.column .heading-widget .custom-heading{
+    color: #fff;
+    font-family: 'bebas neue', cursive;
+    font-size: 46px ;
+    text-align: left;
+}
+
+
+.newsletter_span{
+    font-size: 19px;
+    font-family: 'bebas neue', cursive;
+    text-transform: uppercase;
+}
+
+  
+  .newsletter_h1 {
+    font-size: 20px;
+  }
+
+.col-md-6 form input[type="text"]:focus {
+  outline: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+.col-md-6 form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #161616;
+  color: #D2D3D5;
+  box-shadow: inset 0px -1px rgba(255, 255, 255, 0.2);
+}
+
+
+
+.custom-checkbox{
+  margin-top: 7px;
+}
+
+
+/* Style du checkbox non coché */
+.custom-checkbox input[type="checkbox"] {
+  display: none; /* Masquer le checkbox par défaut */
+}
+
+/* Style de l'étiquette */
+.custom-checkbox label {
+  position: relative;
+  padding-left: 30px; /* Espace pour le "faux" checkbox */
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Style du texte dans l'étiquette */
+.custom-checkbox label > a {
+  text-transform: capitalize; /* Capitaliser le texte */
+}
+
+
+.custom-checkbox label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  width: 17px; /* Taille du "faux" checkbox */
+  height: 17px;
+  border: 2px solid #D2D3D5; /* Bordure par défaut du "faux" checkbox */
+  box-sizing: border-box; /* Assure que la taille inclut la bordure */
+}
+
+/* Style du checkbox coché */
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+  background-color: #161616; /* Fond lorsque le checkbox est coché */
+  border: 1px solid #D2D3D5; /* Bordure lorsque le checkbox est coché */
+}
+
+
+
+/* Style du point blanc au centre du checkbox coché */
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+  background-color: #161616; /* Fond lorsque le checkbox est coché */
+  border: 1px solid #D2D3D5; /* Bordure lorsque le checkbox est coché */
+  content: "\2022"; /* Utiliser le caractère Unicode pour un point */
+  color: #fff; /* Couleur du point blanc */
+  font-size: 12px; /* Taille du point blanc */
+  text-align: center;
+  line-height: 1.5em; /* Ajuster la ligne hauteur pour centrer le point */
+}
+
+
+
+/* Style du texte à côté du checkbox */
+.custom-checkbox label {
+  position: relative;
+  padding-left: 30px; /* Espace pour le "faux" checkbox */
+  cursor: pointer;
+  display: inline-block;
+}
+
+.custom-checkbox label > span {
+  color: #96999F; /* Couleur spécifiée */
+  font-family: 'Roboto', sans-serif; /* Police sans-serif Roboto */
+  font-size: 14px; /* Taille de la police */
+}
+
+/* Style du lien "Privacy Policy" */
+.custom-checkbox label > a {
+  text-decoration: underline; /* Soulignement */
+  color: #D2D3D5; /* Couleur spécifiée */
+  font-family: 'Roboto', sans-serif; /* Police sans-serif Roboto */
+  font-size: 14px; /* Taille de la police */
+  transition: color 0.3s; /* Transition de couleur pour l'effet hover */
+}
+
+/* Changement de couleur au survol */
+.custom-checkbox label > a:hover {
+  color: #fff; /* Couleur blanche au survol */
+}
+
+
+.form-container {
+  position: relative; /* Position relative pour permettre la position absolue de l'icône */
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0px -1px rgba(255, 255, 255, 0.2);
+}
+
+.icon-footer-message {
+  position: absolute;
+  left: 2px; /* Ajustez la position de l'icône à l'intérieur de l'input */
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.icon-footer-message i {
+  cursor: pointer;
+  font-size: 14px;
+  color: #D2D3D5; /* Couleur de l'icône */
+}
+
+.form-container input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #D2D3D5;
+  margin-right: 10px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 20px; /* Ajoutez une marge droite entre l'input et l'icône */
+  outline: none;
+}
+
+.form-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  border-bottom: 1px solid transparent; /* Bordure transparente par défaut */
+  margin-left: -35px; /* Déplacer le bouton vers la gauche */
+  color: #fff;
+}
+
+.form-container .btn-footer i {
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #96999F;/* Couleur de l'icône */
+  background-color: transparent; /* Laisser le fond transparent ou utiliser une autre couleur */
+}
+
+.form-container .btn-footer i:hover {
+  color: white; /* Couleur de l'icône */
+  transition: width 0.3s ease; /* Ajouter une transition sur la largeur du trait */
+}
+
+
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-section {
+  text-align: left;
+}
+
+.menu-title {
+  font-size: 19px;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  flex-direction: column; /* Afficher les éléments en colonne */
+}
+
+.menu-list li {
+  margin-bottom: 10px; /* Ajustez la marge en bas selon vos besoins */
+  position: relative; /
+}
+
+.menu-list .socialy {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #96999F;
+  text-decoration: none;
+}
+
+.menu-list .socialy:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: width 0.3s ease; /* Ajouter une transition sur la largeur du trait */
+}
+
+.menu-list .menu-footer {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #96999F;
+  text-decoration: none;
+  position: relative; /* Position relative pour permettre la position absolue du trait */
+}
+
+.menu-list .menu-footer::after {
+  content: ''; /* Ajouter un élément de pseudo-contenu pour le trait */
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* Ajustez la marge entre le trait et le lien */
+  width: 0;
+  height: 2px; /* Hauteur du trait */
+  background-color: #fff;
+  transition: width 0.3s ease; /* Ajouter une transition sur la largeur du trait */
+}
+
+.menu-list .menu-footer:hover::after {
+  width: 100%; /* Élargir le trait au survol */
+}
+
+.contact-info {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.contact-info  a{
+  color: #96999F;
+}
+
+.contact-info  a:hover{
+  color: white;
+  transition: width 0.3s ease; /* Ajouter une transition sur la largeur du trait */
+  text-decoration: none;
+
+}
+
+
+.footer-text {
+  box-shadow: inset 0px 1px rgba(255, 255, 255, 0.2);
+  padding: 10px; /* Ajoutez une marge intérieure pour un meilleur espacement */
+  margin-top: 20px; /* Ajoutez une marge en haut pour l'espacement */
+  background-color: #161616; /* Couleur de fond (ajustez selon vos préférences) */
+}
+
+.footer-text p {
+  margin: 0; /* Supprimez la marge par défaut du paragraphe */
+  color: #fff; /* Couleur du texte (ajustez selon vos préférences) */
+}

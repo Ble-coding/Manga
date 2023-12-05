@@ -1,0 +1,114 @@
+/* 
+.spacer-widget .widget-title .custom-cursor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.3;
+  } */
+  
+  /* .spacer-widget .widget-title .custom-cursor-before {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 40px;
+    transition: 0.2s ease;
+    opacity: 1;
+  }  */
+
+.swiper-blog{
+    cursor: grab;
+    margin-top: 20px;
+}  
+
+.classic_swiper_slide_blog{
+    margin-right: 20px;
+}
+
+.blog-container {
+    max-width: 1140px; /* Ajustez selon vos besoins */
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.blog-widget {
+    width: 100%;
+}
+
+.post_meta_anime .anime_blog{
+    margin: 0 0 18px;
+    font-size: 15px;
+    color: #1F242E;
+    font-family: cursive;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.entry-title .title_blog{
+    margin: 0 0 18px;
+    font-size: 20px;
+    color: #1F242E;
+    font-family: 'bebas neue', cursive;
+    text-decoration: none;
+}  
+
+.entry-title .title_blog:hover{
+    margin: 0 0 18px;
+    font-size: 20px;
+    color: #D8DEE6;
+    font-family: 'bebas neue', cursive;
+    text-decoration: none;
+} 
+
+.sc_blogger_item_date .post_date a{
+    margin: 0 0 0 3.9px;
+    font-size: 13px;
+    color: #A5A6AA;
+    font-family: 'bebas neue', cursive;
+    text-decoration: none;
+    margin: 5px 0px;
+}
+
+.sc_blogger_item_date .post_meta_comments {
+    margin: 0 0 0 3.9px;
+    font-size: 13px;
+    color: #A5A6AA;
+    font-family: 'bebas neue', cursive;
+    text-decoration: none; /* Assurez-vous que le texte n'a pas de décoration */
+}
+
+
+
+
+.blog-featured img {
+    width: 232px; /* Ajustez selon vos besoins */
+    height: 173px;
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espace entre les boutons de pagination */
+    overflow-x: hidden;
+    width: 90%;
+    margin: 9px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px; /* Largeur du bouton de pagination */
+    height: 10px; /* Hauteur du bouton de pagination */
+    border-radius: 50%; /* Pour créer un cercle */
+}

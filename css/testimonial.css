@@ -1,0 +1,225 @@
+.spacer{
+        background-color: #F2F4F7;
+}
+
+.testimonial-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testi-user-img,
+.user-saying {
+    width: 48%; /* Ajustez la largeur selon vos besoins */
+    box-sizing: border-box;
+}
+
+/*  */
+
+
+.swiper-slide .name{
+    font-size: 17px;
+    color: #1F242E;
+}
+
+.swiper-slide .designation{
+    font-size: 15px;
+    color: #797C7F;
+    margin: 3px 0 0;
+    padding: 0 0 2px;
+}
+
+.gallery-thumbs {
+    height: 100%;
+}
+.gallery-thumbs .swiper-wrapper {
+    align-items: center;
+}
+
+.gallery-thumbs .slider-space {
+    background-position: center;
+    background-size: cover;
+    height: 120px;
+    margin: 5px!important;
+    width:120px;
+    position: relative;
+}
+
+/* .swiper-slide img{
+    border-radius: 100%;
+} */
+
+
+.gallery-thumbs .slider-space img {
+    filter: contrast(0.5) blur(1px);
+    /* width: 100%;
+    height: 100%; */
+    margin: 5px!important;
+    object-fit: cover;
+    height: 120px;
+    width:120px;
+    border-radius: 100%;
+}
+
+.gallery-thumbs .swiper-slide-active img {
+    filter: contrast(1) blur(0px) !important;
+}
+
+.flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+}
+
+.flex-row .flex-col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+.gallery-thumbs .swiper-wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.swiper-container.testimonial {
+    /* height: 100vh; */
+}
+
+.testi-user-img {
+    width: 40%;
+}
+
+.testimonial-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+/* .testimonial-section .quote{
+    width: 500px;
+} */
+/* 
+.testimonial-section .user-saying {
+    width: 100%; 
+    box-sizing: border-box;
+} */
+
+.testimonial-section .user-saying .quote p {
+    font-size: 19px;
+    color: #1F242E;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    margin: 0 auto; /* Pour centrer le texte horizontalement */
+}
+
+/* Styles pour les boutons de navigation personnalisés */
+.swiper-custom-boutons {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alignez les boutons au centre verticalement */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.swiper-button-prev-customize,
+.swiper-button-next-customize {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #3C3D40;
+    color: #161616;
+    background-color: transparent;
+    font-size: 20px;
+    z-index: 12;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 -14px;
+}
+
+/* Centrer les boutons horizontalement */
+.swiper-button-prev-customize {
+    left: calc(50% - 30px); /* Ajustez la valeur pour le centrage */
+}
+
+.swiper-button-next-customize {
+    right: calc(50% - 30px); /* Ajustez la valeur pour le centrage */
+}
+
+/* Styles pour l'effet de survol */
+.swiper-custom-boutons i:hover {
+    color: #6FC9CD;
+    transition: color 1.1s ease;
+}
+
+/* Réinitialiser le poids de la police pour les icônes Font Awesome */
+.fa {
+    font-weight: 100 !important;
+}
+
+/* Vos styles personnalisés */
+.swiper-button-prev-customize i,
+.swiper-button-next-customize i {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+
+/* Vos styles existants */
+
+.testimonial-header {
+    background-color: #F2F4F7;
+    text-align: center;
+    padding: 20px 0; /* Ajoutez un espace autour du texte */
+}
+
+.testimonial-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Pour occuper toute la hauteur */
+}
+
+
+
+.testimonial-header-content h2 {
+    font-weight: bold; /* Texte en gras (bold) */
+    text-transform: uppercase; /* Texte en majuscules */
+    color: white;
+    font-size: 190px;
+    letter-spacing: 30px;
+    margin: 0; /* Supprime la marge par défaut du navigateur */
+}
+
+
+

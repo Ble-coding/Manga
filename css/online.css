@@ -1,0 +1,81 @@
+/* Ajoutez vos styles personnalisés ici */
+.custom-section-with-gradient {
+    background: linear-gradient(to bottom, #161616, #000);
+    padding: 20px; background: linear-gradient(to top, #000, #161616);
+  padding: 20px;
+  margin: 0; z-index: 2; color: transparent
+  }
+
+
+.custom-selection{
+    background-color: black;
+    padding-bottom: 5px;
+    /* padding: ; */
+}
+
+
+.sc_item_subtitle {
+    color: #fff;
+    font-weight: 900;
+    font-size: 19px;
+    margin: 0 0 24.7px;
+}
+
+.sc_item_title {
+    color: #fff;
+    font-weight: 900;
+    font-size: 45px;
+}
+/* Styles pour les boutons de navigation personnalisés */
+.swiper-custom-buttons {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end; /* Ajustez la justification selon vos besoins */
+}
+
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #3C3D40;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 5px; /* Ajustez la marge entre les boutons selon vos besoins */
+}
+
+
+
+.swiper-custom-buttons i {
+    color: #fff;
+}
+  
+  /* Styles pour l'effet de survol */
+.swiper-custom-buttons i:hover {
+    color: #6FC9CD;
+    transition: color 1.1s ease; /* Ajouter une transition de 0.3 seconde avec une fonction d'accélération */
+}
+
+/* Réinitialiser le poids de la police pour les icônes Font Awesome */
+.fa {
+    font-weight: 100 !important;
+}
+
+/* Vos styles personnalisés */
+.swiper-button-prev-custom i,
+.swiper-button-next-custom i {
+    font-size: 16px; /* Ajustez la taille de la police selon vos besoins */
+}
+/* Media Query pour les écrans de petite taille (par exemple, les mobiles) */
+@media screen and (max-width: 767px) {
+
+
+}
